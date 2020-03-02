@@ -38,6 +38,9 @@ public enum Special: UnicodeScalar {
     case narrowNoBreakSpace = "\u{202F}"
     case wordJoiner = "\u{2060}"
     case minusSign = "\u{2212}"
+    case ampersand = "\u{0026}"
+    case lessThan = "\u{003C}"
+    case greaterThan = "\u{003E}"
     case objectReplacementCharacter = "\u{FFFC}" // NSAttachmentCharacter
 
 }
@@ -81,6 +84,9 @@ extension Special {
         case .narrowNoBreakSpace: return "narrowNoBreakSpace"
         case .wordJoiner: return "wordJoiner"
         case .minusSign: return "minusSign"
+        case .ampersand: return "ampersand"
+        case .lessThan: return "lessThan"
+        case .greaterThan: return "greaterThan"
         case .objectReplacementCharacter: return "objectReplacementCharacter"
         }
     }
@@ -112,6 +118,9 @@ extension Special {
         .narrowNoBreakSpace,
         .wordJoiner,
         .minusSign,
+        .ampersand,
+        .lessThan,
+        .greaterThan,
         .objectReplacementCharacter,
     ]
 
